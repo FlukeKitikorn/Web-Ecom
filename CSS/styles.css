@@ -7,7 +7,22 @@
   75% { transform: translateX(-5px); }
   100% { transform: translateX(0); }
 }
-
+@keyframes slider{
+  0%{left:0;}
+  10%{left:0;}
+  20%{left:-100%;}
+  30%{left:-100%;}
+  40%{left:-200%;}
+  50%{left:-200%;}
+  55%{left:-300%;}
+  65%{left:-300%;}
+  66%{left:-200%;}
+  74%{left:-200%;}
+  75%{left:-100%;}
+  85%{left:-100%;}
+  90%{left:0;}
+  1000%{left:0;}
+}
 :root{
   --grey-color: #EEEDEB;
   --bg-color: #FFF6DC;
@@ -161,18 +176,6 @@ nav{
   margin: 30px 0;
   text-align: center;
 }
-.sale h2{
-  font-size: 35px;
-  color: black;
-}
-.sale h2 span{
-  background-color: #FFD93D;
-  padding: 0 5px;
-  border-radius: 10px;
-}
-.sale h2 span span{
-  color: #D04848;
-}
 .sale .container{
   display: inline-flex;
   justify-content: center;
@@ -308,9 +311,118 @@ nav{
   background-color: var(--bg-color);
 }
 
+/* testimonial */
+.testimonial{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#text_head{
+  text-align: center;
+  font-size: 35px;
+  color: black;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+#text_head span{
+  border-bottom: 5px solid var(--bg-color);
+  
+}
+.testimonial-content {
+  position: relative;
+  overflow: hidden;
+  margin: 10px 10px;
+  min-width: 250px;
+  max-width: 310px;
+  width: 100%;
+  background-color: #000000;
+  border-radius: 20px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  transition: all .6s ease;
+}
+.testimonial-content:hover{
+  transform: scale(1.1);
+}
+.testimonial-content img {
+  max-width: 100%;
+  vertical-align: top;
+  opacity: 0.7;
+}
+.testimonial-content figcaption {
+  position: absolute;
+  top: 0;bottom: 0;
+  left: 0;right: 0;
+  padding: 80px 10% 15%;
+}
+.testimonial-content figcaption:before {
+  font-family: var(--secon-text);
+  content: "\201C";
+  position: absolute;
+  font-size: 100px;
+  opacity: 0.35;
+  font-style: normal;
+  transform: translateX(-50%);
+  /* transform: translateY(-1%); */
+  top: 0px;
+  left: 50%;
+}
+.testimonial-content blockquote {
+  padding: 0;
+  margin: 0;
+  font-style: italic;
+  font-size: 1.0rem;
+}
+.testimonial-content h3 {
+  font-family: var(--main-text)!important;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 3px 0;
+}
+.testimonial-content h5 {
+  font-weight: 400;
+  margin: 0;
+  text-transform: uppercase;
+  color: #bbb;
+  letter-spacing: 1px;
+}
+
+/* top-bands */
+.top-bands {
+  display: flex;
+  justify-content: start;
+  scroll-snap-type: x mandatory; /* ทำให้ flex items แสดงต่อเนื่อง */
+  overflow-x: hidden; /* ซ่อน scrollbar แนวนอน */
+  scroll-behavior: smooth; /* เพิ่มความนุ่มนวลในการเลื่อน */
+}
+.band {
+  flex: 0 0 auto;
+  width: 300px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  /* background-color: #f0f0f0;
+  border-radius: 10px; */
+  text-align: center;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  scroll-snap-align: start; /* จุดเริ่มต้นของการ scroll */
+}
+.band img {
+  height: 100%;
+  max-width: 150px;
+  max-height: 100px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.band img:hover{
+  transform: scale(1.1);
+}
 
 /* footer */
-
 .container{
   max-width: 1170px;
   margin: auto;
@@ -424,9 +536,14 @@ ul{
   .navbar-left.open{
     right: 2%;
   }
-  /* .banner-box{
-    min-width: 400px;
-  } */
+}
+@media (max-width: 1000px){
+  .testimonial {
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 767px){

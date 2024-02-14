@@ -22,3 +22,32 @@ window.onload = function() {
     }
   });
 };
+
+document.querySelector('.top-bands').addEventListener('wheel', (e) => {
+  e.preventDefault();
+  const scrollStep = 300; // ค่าเลื่อนแต่ละครั้ง
+  if (e.deltaY < 0) {
+    e.currentTarget.scrollBy({ left: -scrollStep, behavior: 'smooth' });
+  } else {
+    e.currentTarget.scrollBy({ left: scrollStep, behavior: 'smooth' });
+  }
+});
+
+document.querySelector('.top-bands').addEventListener('mousedown', (e) => {
+  isDown = true;
+  startX = e.pageX - document.querySelector('.top-bands').offsetLeft;
+  scrollLeft = document.querySelector('.top-bands').scrollLeft;
+});
+document.querySelector('.top-bands').addEventListener('mouseleave', () => {
+  isDown = false;
+});
+document.querySelector('.top-bands').addEventListener('mouseup', () => {
+  isDown = false;
+});
+document.querySelector('.top-bands').addEventListener('mousemove', (e) => {
+  if (!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - document.querySelector('.top-bands').offsetLeft;
+  const walk = (x - startX) * 3; // เพิ่มความเร็วในการลาก
+  document.querySelector('.top-bands').scrollLeft = scrollLeft - walk;
+});
