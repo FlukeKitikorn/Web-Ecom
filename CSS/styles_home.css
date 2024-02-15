@@ -280,6 +280,18 @@ nav{
   background-position: center;
   padding: 30px;
 }
+#discount{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url('../img/banner2.jpg');
+  min-width: 650px;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+}
 .special h4{
   color: black;
   font-size: 20px;
@@ -311,12 +323,6 @@ nav{
   background-color: var(--bg-color);
 }
 
-/* testimonial */
-.testimonial{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 #text_head{
   text-align: center;
   font-size: 35px;
@@ -327,68 +333,6 @@ nav{
 #text_head span{
   border-bottom: 5px solid var(--bg-color);
   
-}
-.testimonial-content {
-  position: relative;
-  overflow: hidden;
-  margin: 10px 10px;
-  min-width: 250px;
-  max-width: 310px;
-  width: 100%;
-  background-color: #000000;
-  border-radius: 20px;
-  color: #ffffff;
-  text-align: center;
-  font-size: 16px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-  transition: all .6s ease;
-}
-.testimonial-content:hover{
-  transform: scale(1.1);
-}
-.testimonial-content img {
-  max-width: 100%;
-  vertical-align: top;
-  opacity: 0.7;
-}
-.testimonial-content figcaption {
-  position: absolute;
-  top: 0;bottom: 0;
-  left: 0;right: 0;
-  padding: 80px 10% 15%;
-}
-.testimonial-content figcaption:before {
-  font-family: var(--secon-text);
-  content: "\201C";
-  position: absolute;
-  font-size: 100px;
-  opacity: 0.35;
-  font-style: normal;
-  transform: translateX(-50%);
-  /* transform: translateY(-1%); */
-  top: 0px;
-  left: 50%;
-}
-.testimonial-content blockquote {
-  padding: 0;
-  margin: 0;
-  font-style: italic;
-  font-size: 1.0rem;
-}
-.testimonial-content h3 {
-  font-family: var(--main-text)!important;
-  text-transform: uppercase;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 24px;
-  margin: 3px 0;
-}
-.testimonial-content h5 {
-  font-weight: 400;
-  margin: 0;
-  text-transform: uppercase;
-  color: #bbb;
-  letter-spacing: 1px;
 }
 
 /* top-bands */
@@ -535,14 +479,6 @@ ul{
   }
   .navbar-left.open{
     right: 2%;
-  }
-}
-@media (max-width: 1000px){
-  .testimonial {
-    display: flex ;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
   }
 }
 
