@@ -51,3 +51,100 @@ document.querySelector('.top-bands').addEventListener('mousemove', (e) => {
   const walk = (x - startX) * 3; // เพิ่มความเร็วในการลาก
   document.querySelector('.top-bands').scrollLeft = scrollLeft - walk;
 });
+// length text area
+function countCharacters() {
+  var message = document.getElementById("message").value;
+  var count = message.length;
+  var charCountElement = document.getElementById("charCount");
+  charCountElement.textContent = count + "/100";
+  if (count > 100) {
+      charCountElement.style.color = "red";
+  } else {
+      charCountElement.style = "initial";
+  }
+}
+
+// check phone
+function isValidPhone(phone) {
+  // ตรวจสอบรูปแบบเบอร์โทรศัพท์ (ตัวเลขเท่านั้น)
+  var regex = /^[0-9]+$/;
+  return regex.test(phone);
+}
+
+//submit form
+function Submit() {
+  var name = document.getElementById('name');
+  var email = document.getElementById('mail');
+  var phone = document.getElementById('phone');
+  var message = document.getElementById('message');
+
+  if (name.value.trim() === '') {
+    name.classList.add("error");
+  } else {
+    name.classList.remove("error");
+  }
+
+  if (email.value.trim() === '') {
+    email.classList.add("error");
+  } else {
+    email.classList.remove("error");
+  }
+
+  if (phone.value.trim() === '') {
+    phone.classList.add("error");
+  } else {
+    phone.classList.remove("error");
+  }
+
+  if (message.value.trim() === '') {
+    message.classList.add("error");
+  } else {
+    message.classList.remove("error");
+  }
+
+  if (name === '' || email === '' || phone === '' || message.value.trim() === '') {
+      alert('ERROR: Please fill in all fields.');
+
+      return;
+  }
+  else{
+    if (message.value.length > 100) {
+      alert("Message should not exceed 100 characters.");
+      message.style.color = "red"
+      return;
+    }
+    if (!isValidPhone(phone)) {
+      alert("Please enter a valid phone number.");
+      return;
+    }
+    alert("Message sent successfully!");
+  }
+  
+
+  // กรณีที่ไม่มีข้อความที่ต้องแจ้งเตือน
+  // หรือเป็นไปตามการดำเนินการที่คุณต้องการ
+  // จะไปทำงานต่อที่นี่
+}
+
+
+
+
+
+// function Submit() {
+//   let name = document.getElementById("name").value.trim();
+//   let email = document.getElementById("email").value.trim();
+//   let phone = document.getElementById("phone").value.trim();
+//   let message = document.getElementById("message").value.trim();
+//   if(name === "" || email === "" || phone === "" || message === ""){
+//     console.log()
+//     alert("Please fill in all fields");
+//     return false;
+//   }
+//   else if (message.length > 100) {
+//       alert("Message should not exceed 100 characters.");
+//       return false;
+//   }
+//   ส่งข้อมูลหรือดำเนินการต่อตามต้องการ
+//   alert("Message sent successfully!");
+//   return true;
+// }

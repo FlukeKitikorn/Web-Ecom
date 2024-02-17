@@ -35,16 +35,20 @@
     <main>
 
       <section>
+        <h2 id="text_head" style="margin-top: 10px; margin-bottom: 20px; "><span id="sub">Contact Us</span></h2>
         <div class="container_content">
           <div class="container_contact-box">
+            <!-- picture -->
             <div class="box-left"></div>
+            <!-- form -->
             <div class="box-right">
               <h2>Contact Us</h2>
-              <input type="text" class="filed" placeholder="Your name">
-              <input type="email" class="filed" placeholder="Your email">
-              <input type="text" class="filed" placeholder="Your Phone">
-              <textarea class="filed area" placeholder="Message"></textarea>
-              <button class="btn">Send</button>
+              <input id="name" type="text" class="filed" style="margin-bottom: 22px;" placeholder="Your name">
+              <input id="mail" type="email" class="filed" style="margin-bottom: 22px;" placeholder="Your email">
+              <input id="phone" type="text" class="filed" style="margin-bottom: 22px;" placeholder="Your Phone">
+              <textarea id="message" class="filed area" placeholder="Message" oninput="countCharacters()"></textarea>
+              <p id="charCount">0/100</p>
+              <button class="btn" onclick="Submit()">Send</button>
             </div>
           </div>
         </div>
