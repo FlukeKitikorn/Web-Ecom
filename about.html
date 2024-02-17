@@ -8,7 +8,6 @@
     <link rel="shortcut icon" href="./img/logo/android-chrome-512x512.png" type="image/x-icon">
     <!-- styles custom -->
     <link rel="stylesheet" type="text/css" href="./CSS/styles_about.css" />
-    <img id="backg" src="./img/bg_men_about.jpg" alt="backgrond">
   </head>
   <body>
     
@@ -31,19 +30,11 @@
           <div id="ham-menu"><i class="fa-solid fa-bars"></i></div>
         </div>
       </nav>
-
-      <!-- <div class="row_head">
-        <div class="col-2">
-          <h1>Choose Your Own Style</h1>
-          <p>Fashion is endless.Shop now at uniQon</p>
-          <a href="shop.html" class="btn">Shopping now &#8594</a>
-        </div>
-      </div> -->
     </header>
 
     <main>
         <!-- about -->
-      <section >
+      <section id="About">
         <h2 id="text_head" style="margin-top: -5px; margin-bottom: -1px;"><span id="sub">About Us</span></h2>
         <div class="about_content">
             <div class="about_board">
@@ -54,15 +45,79 @@
             <div class="about_des">
                 <em class="">UniQon.co</em>
                 <h2 class=" ">UniQon</h2>
-                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, aut!</p>
-                <p class="text_last">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, eum.</p>
+                <p class="">Uniqon is a place where customers can find their own unique style. Emphasizing uniqueness and the ability to present fashion that meets individual challenges. It is associated with the name Uniqon, which represents the uniqueness and uniqueness of the products sold on your e-commerce website.</p>
+                <p class="text_last"> The use of the phrase "Where Fashion Meets Individuality" emphasizes the combination of fashion and individuality. perfectly.</p>
                 <button id="white">Join Us</button>
             </div>
         </div>
       </section>
+        
+      <!-- service -->
+      <section class="service" id="Service">
+        <h2 id="text_head" style="margin-top: -25px; margin-bottom: 20px;"><span id="sub">Service</span></h2>
+        <div class="container_service">
+          <div class="box_service">
+            <h2>01</h2>
+            <h3>Search service</h3>
+            <p>AI/ML uses customer data such as web browsing history, previous purchases, and preferences to make dynamic product recommendations. to match the current interests of customers Helps improve sales efficiency and enhance customer shopping experience.</p>
+          </div>
+          <!-- box2 -->
+          <div class="box_service">
+            <h2>02</h2>
+            <h3>Delivery & Tracking</h3>
+            <p>High quality shipping services including expedited shipping. with status tracking via email or app So that customers are clearly aware of the delivery status. and ensure that the product will reach the customer on time</p>
+          </div>
+          <!-- box3 -->
+          <div class="box_service">
+            <h2>03</h2>
+            <h3>After-sales service</h3>
+            <p>The best customer service after purchasing a product, including advice on how to care for the product. Problem management and receive feedback to improve future services So that customers feel confident and fully satisfied in purchasing products with your website.</p>
+          </div>
+        </div>
+      </section>
+      
       <!-- team -->
-      <section class="team">
-
+      <h2 id="text_head" style="margin-top: 0px; margin-bottom: 0px; background: white;"><span id="sub">Our team</span></h2>
+      <section class="team" id="Teams">
+        <!-- CEO -->
+        <div class="person" style="--color-team: #37375e">
+          <div class="container_team">
+            <div class="container_content">
+              <div class="circle">
+                <img src="./img/user/role_3.png" alt="ceo_image">
+              </div>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <h1>Kitty Sena</h1>
+          <p>CEO</p>
+        </div>
+        <!-- 2 -->
+        <div class="person" style="--color-team: #782a2b">
+          <div class="container_team">
+            <div class="container_content">
+              <div class="circle">
+                <img src="./img/user/role_2.png" alt="Marketing manager_image">
+              </div>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <h1>Adam white</h1>
+          <p>Marketing manager</p>
+        </div>
+        <!-- 3 -->
+        <div class="person" style="--color-team: #3e6e7c">
+          <div class="container_team">
+            <div class="container_content">
+              <div class="circle">
+                <img src="./img/user/role_1.png" alt="Financial_image">
+              </div>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <h1>Betty Roland</h1>
+          <p>Financial manager</p>
+        </div>
       </section>
 
     </main>
@@ -74,8 +129,9 @@
           <div class="footer-col">
             <h4>COMPANY</h4>
             <ul>
-              <li><a href="#">about us</a></li>
-              <li><a href="#">our service</a></li>
+              <li><a href="#About">about us</a></li>
+              <li><a href="#Service">our service</a></li>
+              <li><a href="#Teams" >our teams</a></li>
             </ul>
           </div>
 
@@ -112,6 +168,7 @@
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/33742628d2.js" crossorigin="anonymous"></script>
     <!-- js event -->
-    <script src="./JS/script.js"></script>
+    <script src="./JS/script.js">
+    </script>
   </body>
 </html>
