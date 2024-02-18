@@ -163,7 +163,10 @@ nav{
 
 /* main */
 main{
-  /* background-color: var(--bg-color); */
+  /* background: url('/img/woman-2564660_1280.jpg') no-repeat center;
+  background-size: cover;
+  z-index: -1;
+  filter: blur(50px); */
 }
 
 /* contact */
@@ -316,9 +319,6 @@ iframe{
   box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
   position: relative;
 }
-
-
-
 
 /* footer */
 .container{
