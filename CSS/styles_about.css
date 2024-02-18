@@ -258,7 +258,7 @@ main{
   top: 0;left: 0;
   width: 100%;
   height: 100%;
-  background: #ECB159; /* change color */
+  background: #ECB159; 
   transform: scaleY(0);
   transform-origin: top;
   transition: transform 0.5s;
