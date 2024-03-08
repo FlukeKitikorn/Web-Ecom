@@ -51,6 +51,7 @@ document.querySelector('.top-bands').addEventListener('mousemove', (e) => {
   const walk = (x - startX) * 3; // เพิ่มความเร็วในการลาก
   document.querySelector('.top-bands').scrollLeft = scrollLeft - walk;
 });
+
 // length text area
 function countCharacters() {
   var message = document.getElementById("message").value;

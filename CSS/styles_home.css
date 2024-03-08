@@ -35,15 +35,11 @@
   box-sizing: border-box;
 }
 header{
-  /* margin-top: 3rem; */
   min-height: 100vh;
-  /* background-color: blue; */
-  /* color: black; */
   background-image: url('/img/bg_img_home.jpg') ;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  /* object-fit: cover; */
 }
 
 body{
