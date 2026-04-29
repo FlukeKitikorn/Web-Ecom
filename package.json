@@ -1,0 +1,27 @@
+{
+  "name": "e-commerce-website",
+  "version": "1.0.0",
+  "description": "UniQon is a modern fashion e-commerce website where customers can discover their unique style. The platform emphasizes individuality and offers a curated selection of clothing, sneakers, and accessories from top brands.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FlukeKitikorn/E-Commerce-Website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/FlukeKitikorn/E-Commerce-Website/issues"
+  },
+  "homepage": "https://github.com/FlukeKitikorn/E-Commerce-Website#readme",
+  "devDependencies": {
+    "eslint": "^10.2.1",
+    "htmlhint": "^1.9.2",
+    "prettier": "^3.8.3",
+    "stylelint": "^17.9.1"
+  }
+}
