@@ -79,5 +79,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: |
-            ghcr.io/${{ github.repository.toLowerCase() }}:latest
+          tags: ghcr.io/${{ github.repository.toLowerCase() }}:latest
+          platforms: linux/amd64,linux/arm64
