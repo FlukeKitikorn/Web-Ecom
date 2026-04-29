@@ -79,5 +79,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/${{ github.repository.toLowerCase() }}:latest
-          platforms: linux/amd64,linux/arm64
+          tags: |
+            ghcr.io/flukekitikorn/e-commerce-website:latest
