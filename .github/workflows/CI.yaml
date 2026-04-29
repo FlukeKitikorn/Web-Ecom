@@ -1,0 +1,21 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code fronm repository
+        uses: actions/checkout@v6
+      - name: Install nodeJS fot lint
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+      - name: Install dependencies
+        run: npm install
+      - run: npm run lint:js
+      - run: npm run lint:css
+      - run: npm run lint:html
