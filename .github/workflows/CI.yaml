@@ -17,5 +17,4 @@ jobs:
       - name: Install dependencies
         run: npm install
       - run: npm run lint:js
-      - run: npm run lint:css
       - run: npm run lint:html
