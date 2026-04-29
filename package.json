@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint:js": "eslint JS/",
-    "lint:css": "stylelint \"css/**/*.css\"",
-    "lint:html": "htmlhint *.html"
+    "lint:css": "stylelint '**/*.css'",
+    "lint:html": "eslint '**/*.html'"
   },
   "repository": {
     "type": "git",
@@ -22,9 +22,12 @@
   },
   "homepage": "https://github.com/FlukeKitikorn/E-Commerce-Website#readme",
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "eslint": "^10.2.1",
+    "eslint-plugin-html": "^8.1.4",
     "htmlhint": "^1.9.2",
     "prettier": "^3.8.3",
-    "stylelint": "^17.9.1"
+    "stylelint": "^17.9.1",
+    "stylelint-config-standard": "^40.0.0"
   }
 }

@@ -1,0 +1,8 @@
+module.exports = {
+    extends: "stylelint-config-standard",
+    rules: {
+      "indentation": 2,
+      "color-no-invalid-hex": true
+    }
+  };
+  

@@ -8,5 +8,11 @@ module.exports = [
       "no-unused-vars": "warn",
       "no-console": "off"
     }
+  },
+  {
+    files: ["**/*.html"],
+    plugins: {
+      html: require("eslint-plugin-html")
+    }
   }
 ];
