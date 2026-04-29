@@ -11,7 +11,7 @@ module.exports = [
       },
     },
     rules: {
-      "no-unused-vars": "warn",
+      "no-unused-vars": ["warn", { varsIgnorePattern: "countCharacters|isValidPhone" }],
       "no-console": "off",
     },
   },

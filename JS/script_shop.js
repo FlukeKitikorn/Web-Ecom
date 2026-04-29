@@ -196,8 +196,6 @@
 // };
 // displayItem(categories);
 
-/* eslint-env browser */
-
 const mobileNav = document.querySelector("#ham-menu");
 const navbar = document.querySelector(".navbar-left");
 
