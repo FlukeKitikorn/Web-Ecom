@@ -1,3 +1,5 @@
+/* eslint-env browser */
+
 const mobileNav = document.querySelector("#ham-menu");
 const navbar = document.querySelector(".navbar-left");
 
@@ -14,9 +16,6 @@ window.onload = function () {
       nav.style.backgroundColor = "#EEEDEB";
       nav.style.borderBottomRightRadius = "20px";
       nav.style.borderBottomLeftRadius = "20px";
-      // if (window.scrollY > 1){
-      //   nav.style.boxShadow = "2px 2px 4px rgba(0, 0, 0, 0.3)" ;
-      // }
     } else {
       nav.style.backgroundColor = "transparent";
     }
@@ -59,6 +58,7 @@ topBands.addEventListener("mousemove", (e) => {
 });
 
 // length text area
+/* exported countCharacters */
 function countCharacters() {
   const message = document.getElementById("message").value;
   const count = message.length;
@@ -72,6 +72,7 @@ function countCharacters() {
 }
 
 // check phone
+/* exported isValidPhone */
 function isValidPhone(phone) {
   const regex = /^[0-9]+$/;
   return regex.test(phone);
