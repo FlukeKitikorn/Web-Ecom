@@ -8,7 +8,7 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code fronm repository
+      - name: Checkout code from repository
         uses: actions/checkout@v6
       - name: Install nodeJS fot lint
         uses: actions/setup-node@v6
