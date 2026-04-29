@@ -36,14 +36,14 @@
 }
 header{
   min-height: 100vh;
-  background-image: url('/img/bg_img_home.jpg') ;
+  background-image: url('../img/bg_img_home.jpg') ;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
 }
 
 body{
-  background-image: url('/img/main_background.jpg') ;
+  background-image: url('../img/main_background.jpg') ;
   background-size: cover;
   background-repeat: no-repeat;
   font-family: var(--secon-text);
