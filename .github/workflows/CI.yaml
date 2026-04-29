@@ -57,3 +57,13 @@ jobs:
       - name: Example for test
         run: echo "Testing...." 
 
+  build:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - name: Checkout code from repository
+        uses: actions/checkout@v6
+      - name: Build Docker image
+        run: docker build -t my-static-web .
+      - name: Run container (test)
+        run: docker run -d -p 8080:80 my-static-web
