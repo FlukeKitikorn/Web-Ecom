@@ -4,7 +4,10 @@
   "description": "UniQon is a modern fashion e-commerce website where customers can discover their unique style. The platform emphasizes individuality and offers a curated selection of clothing, sneakers, and accessories from top brands.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint:js": "eslint js/",
+    "lint:css": "stylelint \"css/**/*.css\"",
+    "lint:html": "htmlhint *.html"
   },
   "repository": {
     "type": "git",
